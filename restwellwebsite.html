@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Lucida Grande'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Restwell Therapy&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--brand:#104c9c; /* primary brand blue */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text:#1f2937;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted:#6b7280;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg:#f8fafc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent:#e5efff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maxw:1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius:16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Inter,sans-serif;color:var(--text);background:var(--bg)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a{color:var(--brand);text-decoration:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a:hover{text-decoration:underline}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #eef2f7</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:16px;padding:14px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo .mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(145deg,var(--brand),#3d7bd6);display:grid;place-items:center;color:#fff;font-weight:900}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navlinks{margin-left:auto;display:flex;flex-wrap:wrap;gap:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navlinks a{padding:8px 10px;border-radius:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navlinks a.active, .navlinks a:hover{background:var(--accent)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container{max-width:var(--maxw);margin:0 auto;padding:28px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:24px;padding:36px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero .tag{display:inline-block;background:var(--accent);color:var(--brand);padding:6px 10px;border-radius:999px;font-weight:600;margin-bottom:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1{font-size:clamp(28px,3.2vw,44px);margin:0 0 10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h2{font-size:clamp(22px,2.4vw,30px);margin:24px 0 8px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>p{line-height:1.6}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:12px 16px;border:1px solid #dbe4f3;background:var(--brand);color:#fff;font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.secondary{background:#fff;color:var(--brand)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{background:var(--card);border:1px solid #eef2f7;border-radius:var(--radius);padding:18px;box-shadow:0 10px 18px rgba(16,76,156,.05)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq{max-width:900px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>details{background:#fff;border:1px solid #eef2f7;border-radius:12px;padding:14px 16px;margin:10px 0}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>summary{cursor:pointer;font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer{border-top:1px solid #eef2f7;margin-top:40px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.foot{max-width:var(--maxw);margin:0 auto;padding:24px 20px;color:var(--muted);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subnav{display:flex;gap:12px;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef5ff}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hide{display:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>img.heroimg{width:100%;border-radius:18px;border:1px solid #e8eef8}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.kicker{color:var(--muted);font-weight:600;margin:6px 0 12px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section{margin-top:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width:900px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.cardgrid{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.navlinks{display:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="logo" onclick="route('home')" style="cursor:pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mark"&gt;R&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-size:16px;line-height:1"&gt;Restwell Therapy&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-size:12px;color:var(--muted);line-height:1.2"&gt;Arizona | Telehealth&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="navlinks" id="navlinks"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main id="app" class="container"&gt;&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="foot"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;Restwell Therapy&lt;/strong&gt;&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Phoenix, Arizona · Virtual care for adults&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="tel:16232268398"&gt;(623) 226-8398&lt;/a&gt; · &lt;a href="mailto:corleyphd@restwelltherapy.com"&gt;corleyphd@restwelltherapy.com&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="subnav" id="footlinks"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// --- Simple SPA Router (hash-based) ---</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const NAV = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'home', label:'Home'},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'about', label:'About'},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'services', label:'Services', children:[</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{id:'insomnia', label:'Insomnia'},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{id:'anxiety', label:'Anxiety'},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{id:'chronic-illness', label:'Coping with Chronic Illness'}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>]},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'faq', label:'FAQ'},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'resources', label:'Resources'},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{id:'contact', label:'Contact'}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function makeNav(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const wrap = document.getElementById('navlinks');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>wrap.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>NAV.forEach(item=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(item.children){</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const wrapDrop = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrapDrop.style.position='relative';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const btn = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.href = `#/${item.id}`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.textContent = item.label + ' <span class="s1">▾</span>';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.onclick = e=&gt;{ e.preventDefault(); route(item.id); };</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrapDrop.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const menu = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.position='absolute';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.top='36px';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.left='0';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.background='#fff';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.border='1px solid #eef2f7';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.borderRadius='12px';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.boxShadow='0 10px 24px rgba(16,76,156,.12)';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.padding='8px';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>menu.style.display='none';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>item.children.forEach(ch=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const a = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.href = `#/${ch.id}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.textContent = ch.label;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.style.display='block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.style.padding='8px 10px';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.style.borderRadius='8px';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.onclick = e=&gt;{ e.preventDefault(); route(ch.id); menu.style.display='none'; };</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.onmouseover=()=&gt;a.style.background='#f3f8ff';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.onmouseout=()=&gt;a.style.background='transparent';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>menu.appendChild(a);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>})</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrapDrop.onmouseenter=()=&gt;menu.style.display='block';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrapDrop.onmouseleave=()=&gt;menu.style.display='none';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrapDrop.appendChild(menu);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrap.appendChild(wrapDrop);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const a = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>a.href = `#/${item.id}`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>a.textContent = item.label;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>a.onclick = e=&gt;{ e.preventDefault(); route(item.id); };</p>
+<p class="p1"><span class="Apple-converted-space">          </span>wrap.appendChild(a);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// footer links</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const foot = document.getElementById('footlinks');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>foot.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>NAV.filter(n=&gt;n.id!=='home').forEach(n=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const a = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a.href = `#/${n.id}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a.className='pill';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a.textContent = n.label;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a.onclick = e=&gt;{ e.preventDefault(); route(n.id); };</p>
+<p class="p1"><span class="Apple-converted-space">        </span>foot.appendChild(a);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>})</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// --- Content Templates ---</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const VIEWS = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>home(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="tag"&gt;Invest in Rest&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1&gt;Imagine what you could accomplish with better sleep.&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="kicker"&gt;Virtual individual therapy in Arizona for insomnia, anxiety, and chronic illness.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p&gt;You deserve rest that actually restores you. I specialize in evidence‑based care including Cognitive Behavioral Therapy for Insomnia (CBT‑I) and skills grounded in health psychology. Together, we'll reset your nights so your days feel brighter.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a class="btn" href="tel:16232268398"&gt;Call (623) 226‑8398&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a class="btn secondary" href="mailto:corleyphd@restwelltherapy.com?subject=Consultation%20Request"&gt;Email for a free consult&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;img class="heroimg" alt="Calm bedroom scene" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&amp;w=1440&amp;auto=format&amp;fit=crop"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;How I help&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cardgrid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;&lt;h3&gt;Insomnia&lt;/h3&gt;&lt;p&gt;CBT‑I to improve sleep efficiency, reduce nighttime worry, and rebuild a healthy sleep rhythm without relying on sleep aids.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;&lt;h3&gt;Anxiety&lt;/h3&gt;&lt;p&gt;Evidence‑based strategies to calm a busy mind, lessen avoidance, and expand coping—so sleep becomes easier.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;&lt;h3&gt;Chronic Illness&lt;/h3&gt;&lt;p&gt;Compassionate, practical support for living with pain or medical conditions while protecting rest and energy.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>about(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;About Dr. Angelia Corley&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;I'm a licensed clinical psychologist and founder of Restwell Therapy. My work blends gold‑standard sleep treatment (CBT‑I) with a warm, collaborative style. I partner with adults who are exhausted by long‑standing insomnia, anxious thoughts, or the challenges of chronic illness.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Care is virtual across Arizona and available to clients in PSYPACT‑participating states where permitted.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>services(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Services&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Select a service area to learn more.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="cardgrid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;&lt;h3&gt;&lt;a href="#/insomnia"&gt;CBT‑I for Insomnia&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Retrain your sleep with structured, time‑limited treatment.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;&lt;h3&gt;&lt;a href="#/anxiety"&gt;Therapy for Anxiety&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Skills to reduce worry, rumination, and avoidance.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;&lt;h3&gt;&lt;a href="#/chronic-illness"&gt;Coping with Chronic Illness&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Tools for pacing, boundaries, and energy management.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>insomnia(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;CBT‑I for Insomnia&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;CBT‑I is the first‑line, non‑medication treatment for chronic insomnia. We'll streamline time in bed, rebuild sleep drive, and quiet pre‑sleep worry so your sleep becomes deeper and more predictable.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Sleep assessment and clear plan&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Stimulus control &amp; sleep scheduling&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Strategies for nighttime thoughts&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Relapse‑prevention for long‑term gains&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>anxiety(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Therapy for Anxiety&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;We’ll use practical tools to dial down the intensity of anxiety and expand what feels possible in your days and nights.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Reduce rumination and what‑if spirals&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Gentle, values‑based exposure&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Mind‑body skills that support sleep&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'chronic-illness'(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Coping with Chronic Illness&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Therapy that recognizes the realities of pain, fatigue, and medical care—while helping you protect energy and rest.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Pacing &amp; boundary setting&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Grief, identity, and meaning&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Communication with providers and loved ones&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>faq(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Frequently Asked Questions&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="faq"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;details&gt;&lt;summary&gt;Do you offer telehealth?&lt;/summary&gt;&lt;p&gt;Yes. Sessions are virtual for adults located in Arizona. PSYPACT availability may extend to additional states where permitted.&lt;/p&gt;&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;details&gt;&lt;summary&gt;What is CBT‑I?&lt;/summary&gt;&lt;p&gt;A structured, short‑term treatment that targets the patterns keeping insomnia in place and rebuilds healthy sleep.&lt;/p&gt;&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;details&gt;&lt;summary&gt;Do you take insurance?&lt;/summary&gt;&lt;p&gt;Out‑of‑network. I’m glad to provide superbills for reimbursement if your plan includes OON benefits.&lt;/p&gt;&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;details&gt;&lt;summary&gt;How do I get started?&lt;/summary&gt;&lt;p&gt;Call or email to schedule a free 15‑minute consultation.&lt;/p&gt;&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resources(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Resources&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Helpful links, handouts, and recommendations to support better sleep and well‑being.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#/insomnia"&gt;What to expect with CBT‑I&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://cbti.directory/" target="_blank" rel="noopener"&gt;CBT‑I Directory&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.psychologytoday.com/us/therapists/angelia-corley-phoenix-az/1549665" target="_blank" rel="noopener"&gt;Psychology Today Profile&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>contact(){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Contact&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;I’d love to connect. Reach out to schedule a free consultation or ask questions.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; &lt;a href="tel:16232268398"&gt;(623) 226‑8398&lt;/a&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">             </span>&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:corleyphd@restwelltherapy.com"&gt;corleyphd@restwelltherapy.com&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form onsubmit="event.preventDefault(); alert('Thanks! I\'ll be in touch soon.');" class="card" style="max-width:640px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;Name&lt;br&gt;&lt;input required style="width:100%;padding:10px;border:1px solid #dbe4f3;border-radius:10px"/&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;Email&lt;br&gt;&lt;input type="email" required style="width:100%;padding:10px;border:1px solid #dbe4f3;border-radius:10px"/&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;Message&lt;br&gt;&lt;textarea required rows="5" style="width:100%;padding:10px;border:1px solid #dbe4f3;border-radius:10px"&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" type="submit"&gt;Send&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function setActive(id){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// highlight current</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.navlinks a').forEach(a=&gt;a.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const link = Array.from(document.querySelectorAll('.navlinks a')).find(a=&gt;a.getAttribute('href')===`#/${id}`);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(link) link.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function route(id){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(!id) id = (location.hash.replace('#/','') || 'home');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const view = VIEWS[id] || VIEWS['home'];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('app').innerHTML = view();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setActive(id);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>history.replaceState(null,'',`#/${id}`);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.scrollTo({top:0,behavior:'smooth'});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// init</p>
+<p class="p1"><span class="Apple-converted-space">    </span>makeNav();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.addEventListener('hashchange', ()=&gt;route());</p>
+<p class="p1"><span class="Apple-converted-space">    </span>route();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
